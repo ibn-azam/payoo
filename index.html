@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payoo</title>
+  <title>Payoo | LogIn</title>
   <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 
 
@@ -26,6 +26,27 @@
   </style>
 </head>
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-  <h1>Hellow,Let's Start Payoo</h1>
+  <div class="w-[200px] mx-auto pt-32">
+    <img src="./assets/Logo-full.png" alt="">
+  </div>
+  <!-- This is alog in form -->
+  <div class="form pt-10">
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-neutral font-bold ">Mobile Number</label>
+          <input id="input-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200" placeholder="Enter your 11 digit number" value="01720350601" />
+          <br>
+          <label class="label text-neutral font-bold">4 digit pin</label>
+          <input id="input-pin" maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200" placeholder="Enter 4 digit pin" />
+
+          <button id="login-btn" class="btn btn-primary rounded-full mt-4">Log In</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/login.js"></script>
 </body>
 </html>
